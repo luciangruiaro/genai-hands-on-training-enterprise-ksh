@@ -1,0 +1,15 @@
+matplotlib
+numpy
+pandas
+seaborn
+torch
+psutil~=7.0.0
+tensorflow
+keras
+visualkeras
+scikit-learn
+tensorflow.keras
+flask
+python-dotenv
+pyyaml
+scikit-image
