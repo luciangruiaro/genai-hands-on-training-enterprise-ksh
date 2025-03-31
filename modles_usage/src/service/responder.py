@@ -1,34 +1,34 @@
-from service.llm import ollama_api, llamacpp_api, lmstudio_api
-from service.llm.gemini_api import gemini_call
-from service.llm.openai_api import openai_call
-from service.llm.py_hf import hf_call
+from typing import Dict
+
+from service.llm import openai_api, gemini_api, ollama_api, lmstudio_api, llamacpp_api
 
 RESPONSE_TEMPLATE = "Hello {prompt}!"
 
-llm_provider = "pyhf"  # Options: openai, gemini, ollama, lmstudio, llamacpp
+# Set your provider here (ideally move to a config later)
+llm_provider = "llamacpp"  # Options: openai, gemini, ollama, lmstudio, llamacpp
 
 
 def llm_ask(prompt: str) -> str:
     if llm_provider == "openai":
-        return openai_call(prompt)
+        return openai_api.openai_call(prompt)
     elif llm_provider == "gemini":
-        return gemini_call(prompt)
+        return gemini_api.gemini_call(prompt)
     elif llm_provider == "ollama":
-        return ollama_api.ollama_call(prompt)
-    elif llm_provider == "llamacpp":
-        return llamacpp_api.call_llamacpp(prompt)
+        return ollama_api.ollama_call([{"role": "user", "content": prompt}], model="llama3.2")
     elif llm_provider == "lmstudio":
         return lmstudio_api.lmstudio_call(prompt)
-    elif llm_provider == "pyhf":
-        return hf_call(prompt)
+    elif llm_provider == "llamacpp":
+        return llamacpp_api.call_llamacpp(prompt)
+    else:
+        return "Error: Unknown LLM provider."
 
 
-def generate_response(message):
-    llm_response = llm_ask(message)
-    dummy_response = RESPONSE_TEMPLATE.format(prompt=message)
+def generate_response(prompt: str) -> Dict:
+    llm_response = llm_ask(prompt)
+    dummy_response = RESPONSE_TEMPLATE.format(prompt=prompt)
 
     return {
-        # "dummy_response": dummy_response,
         "llm_provider": llm_provider,
-        "llm_response": llm_response
+        "llm_response": llm_response,
+        "dummy_response": dummy_response
     }

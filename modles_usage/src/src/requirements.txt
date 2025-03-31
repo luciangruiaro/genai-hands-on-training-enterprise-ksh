@@ -1,9 +1,0 @@
-fastapi
-uvicorn
-ollama
-openai
-google.generativeai
-llama-cpp-python
-transformers
-accelerate
-sentencepiece
