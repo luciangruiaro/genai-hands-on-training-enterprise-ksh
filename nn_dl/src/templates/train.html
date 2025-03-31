@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Neural Network</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/train.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="grid-container">
+        <div class="input-image">
+            <h2>Input Image</h2>
+            <div id="inputGrid"></div>
+        </div>
+        <div class="expected-result">
+            <h2>Expected Result</h2>
+            <div id="outputGrid"></div>
+        </div>
+    </div>
+
+    <button id="submitBtn">Submit</button>
+</div>
+
+
+<script src="{{ url_for('static', filename='js/train.js') }}"></script>
+</body>
+</html>

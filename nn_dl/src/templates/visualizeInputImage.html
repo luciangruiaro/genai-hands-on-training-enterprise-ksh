@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Visualization</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        .cell {
+            width: 10px;
+            height: 10px;
+            border: 1px solid #ffffff;
+        }
+
+        .filled {
+            background-color: #00ffbe;
+        }
+
+    </style>
+</head>
+<body>
+<div id="gridVisual"></div>
+<script src="{{ url_for('static', filename='js/visualizeInputImage.js') }}"></script>
+</body>
+</html>

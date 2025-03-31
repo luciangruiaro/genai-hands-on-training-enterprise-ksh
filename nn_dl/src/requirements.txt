@@ -1,0 +1,8 @@
+flask
+python-dotenv
+pyyaml
+matplotlib
+numpy
+tensorflow
+scikit-image
+tensorflow.keras

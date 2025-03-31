@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neural Networks Playground</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 1rem 0;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🧠 Neural Networks Playground</h1>
+<p>Welcome! Choose a demo or visualization below:</p>
+
+<ul>
+    <li><a href="/sn/visualize">⚙️ Simple Neuron</a> (JSON)</li>
+    <li><a href="/nn/visualizeInputImage">🖼️ Visualize Input Image</a></li>
+    <li><a href="/nn/network-d3">🧬 Network Structure (D3)</a></li>
+    <li><a href="/nn/test">🧪 Test Neural Network</a></li>
+</ul>
+
+<footer style="margin-top: 3rem; font-size: 0.9rem; color: #7f8c8d;">
+    © luciangruia.ro • Version {{ config['APP_CONFIG']['app']['version'] }} • Mode: {{ config['APP_CONFIG']['app']['mode'] }}
+</footer>
+
+</body>
+</html>

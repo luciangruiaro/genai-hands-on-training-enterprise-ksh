@@ -1,0 +1,35 @@
+app:
+  name: neural-networks
+  version: 1.0
+  mode: development
+
+paths:
+  base: .
+  python_venv: venv/Scripts/python.exe
+  static:
+    js: static/js
+    css: static/css
+  model_json: resources/nnModel.json
+  training_data: resources/training_data.json
+
+sn:
+  output_threshold: 0.5
+  learning_rate: 0.01
+  input_size: 3
+  epochs: 50
+
+nn:
+  input_neurons: 196  # Or 784 for 28x28
+  output_neurons: 10
+  output_threshold: 0.5
+  no_hidden_layers: 2
+  neurons_per_hidden_layer: 16
+  learning_rate: 7
+  epochs: 10
+  activation: sigmoid
+  training_set_size: 300
+  json_model: resources/nnModel.json
+  training_data: resources/training_data.json
+  default_resolution: 14     # Options: 8, 14, 28
+  default_digit: 2
+  data_directory: resources/data

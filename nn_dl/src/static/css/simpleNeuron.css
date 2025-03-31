@@ -1,0 +1,32 @@
+body {
+    font-family: Lexend, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eeeeee;
+}
+
+.input-circle {
+    fill: rgb(189, 189, 189);
+}
+
+.animated-input {
+    fill: #0de7e7;
+}
+
+.intermediary-circle {
+    fill: rgb(189, 189, 189);
+}
+
+.neuron {
+    fill: #0de7e7;
+}
+
+.activated {
+    fill: #c73a52;
+}
+
+.line {
+    stroke: #757575;
+    stroke-width: 1;
+}

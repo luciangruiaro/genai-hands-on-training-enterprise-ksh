@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0efec;
+    color: #0020bb;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-image, .expected-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputGrid, #outputGrid {
+    display: grid;
+    gap: 5px;
+}
+
+.grid-cell {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-cell.toggled {
+    background-color: #00ffbe;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #0020bb;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00ffbe;
+    color: black;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row; /* This ensures the items are side by side */
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,33 @@
+body {
+    font-family: Lexend, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
+    background-color: #f4f4f4;
+}
+
+.inputNeuron {
+    fill: #f0efec;
+}
+
+.hiddenNeuron {
+    fill: #0de7e7;
+}
+
+.outputNeuron {
+    fill: #0de7e7;
+}
+
+.neuron {
+    fill: #0de7e7;
+}
+
+.line {
+    stroke: rgba(112, 112, 112, 0.93);
+    stroke-width: 0.5px;
+}
+
+text {
+    pointer-events: none; /* Ensure text doesn't interfere with mouse events */
+}
