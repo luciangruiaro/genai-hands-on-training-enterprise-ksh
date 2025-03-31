@@ -2,7 +2,7 @@ matplotlib
 numpy
 pandas
 seaborn
-torch
+torch~=2.5.1+cu121
 psutil~=7.0.0
 tensorflow
 keras
@@ -13,3 +13,12 @@ flask
 python-dotenv
 pyyaml
 scikit-image
+fastapi
+uvicorn
+ollama
+openai
+google.generativeai
+llama-cpp-python
+transformers
+accelerate
+sentencepiece
