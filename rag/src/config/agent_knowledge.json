@@ -1,0 +1,63 @@
+{
+  "company_name": "Keysight Technologies",
+  "founded_year": 2014,
+  "headquarters": {
+    "city": "Santa Rosa",
+    "state": "California",
+    "country": "United States"
+  },
+  "industry": "Electronics and Test & Measurement Equipment",
+  "employees": 15000,
+  "annual_revenue_usd_billion": 5.5,
+  "ceo": {
+    "first_name": "Ronald",
+    "last_name": "Neralich",
+    "since": 2021
+  },
+  "stock_symbol": "KEYS",
+  "listed_exchange": "NYSE",
+  "products": [
+    "Oscilloscopes",
+    "Signal Generators",
+    "Network Analyzers",
+    "EMC Test Systems",
+    "5G Test Solutions",
+    "Automotive Radar Test Equipment"
+  ],
+  "key_clients": [
+    "Intel",
+    "Qualcomm",
+    "Tesla",
+    "Ericsson",
+    "Samsung"
+  ],
+  "research_focus": [
+    "5G/6G Wireless Testing",
+    "Quantum Computing Testbeds",
+    "AI-Driven Signal Analysis",
+    "Autonomous Vehicle Sensor Testing"
+  ],
+  "global_presence": {
+    "regions": [
+      "North America",
+      "Europe",
+      "Asia-Pacific"
+    ],
+    "offices_count": 78,
+    "main_rnd_centers": [
+      "Santa Rosa, CA",
+      "Penang, Malaysia",
+      "Bangalore, India",
+      "Boeblingen, Germany"
+    ]
+  },
+  "sustainability_initiatives": {
+    "carbon_neutral_goal_year": 2040,
+    "renewable_energy_usage_percent": 65,
+    "green_certifications": [
+      "LEED Gold - Santa Rosa Campus",
+      "ISO 14001 Environmental Certification"
+    ]
+  },
+  "user_custom_1": "Tudor este un specialist software"
+}

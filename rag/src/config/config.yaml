@@ -1,0 +1,49 @@
+framework: fastapi
+#framework: flask
+
+app:
+  name: "RAG PoC App"
+  version: "1.0.0"
+  debug: true
+  port: 5000
+
+constants:
+  greeting_message: "Hello, user!"
+  post_ack: "Data received successfully."
+
+logging:
+  level: "INFO"
+
+knowledge:
+  source: "qdrant"  # or "file"
+  threshold: 0.7
+  limit: 1
+
+llm_config:
+  provider: "openai" # openai or ollama
+  model: "gpt-4o" # gpt-3.5-turbo or llama3.2
+  temperature: 0.7
+  context_window: 10000
+  include_history: true
+  history_length: 10         # number of previous messages to include in context
+  max_tokens: 5000           # max output length
+  top_p: 1.0                 # nucleus sampling (OpenAI & Gemini)
+
+chunking:
+  enable_variable: false
+  enable_semantic: true
+  max_sentences: 2
+  max_words: 120
+  max_characters: 1000
+  semantic_embed_model: "openai/text-embedding-ada-002" # openai/text-embedding-ada-002 or sentence-transformers/all-MiniLM-L6-v2
+  semantic_breakpoint_threshold: 30  # can be float (0.7) or int (70)
+
+vectordb:
+  qdrant:
+    host: "localhost"
+    port: 6333
+    collection_name: "source_texts"
+    provider: "openai" # openai or sentence-transformers
+    embedding_model: "text-embedding-ada-002" # text-embedding-ada-002 or all-MiniLM-L6-v2
+    vector_size: 1536  # 1536 for openai 384 for sentence-transformers
+    distance: "COSINE"  # options: COSINE, EUCLID, DOT

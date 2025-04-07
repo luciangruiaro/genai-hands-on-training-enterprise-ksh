@@ -2,7 +2,7 @@ matplotlib
 numpy
 pandas
 seaborn
-torch~=2.5.1+cu121
+torch
 psutil~=7.0.0
 tensorflow
 keras
@@ -22,3 +22,13 @@ llama-cpp-python
 transformers
 accelerate
 sentencepiece
+gunicorn
+pyinstaller
+qdrant-client
+sentence-transformers
+stanza
+llama_index
+llama_index.embeddings.huggingface
+tf-keras
+selenium
+langdetect

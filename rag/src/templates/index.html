@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MultiMode Python App</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>MultiMode Python App</h1>
+
+    <div class="card">
+        <button onclick="callGet()">Call GET /hello</button>
+    </div>
+
+    <div class="card">
+        <input type="text" id="nameInput" placeholder="Enter your name"/>
+        <input type="number" id="ageInput" placeholder="Enter your age"/>
+        <button onclick="callPost()">Send POST</button>
+    </div>
+
+    <div class="response">
+        <h3>Response:</h3>
+        <pre id="responseBox"></pre>
+    </div>
+</div>
+<script src="/static/js/app.js"></script>
+</body>
+</html>
